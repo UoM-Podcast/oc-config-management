@@ -20,7 +20,7 @@
 
 - name: Removing Opencast packages
   package:
-    name:  "{{ lookup('vars', group_names[1]) }}"
+    name:  "{{ lookup('vars', opencast_node_type) }}"
     state: absent
   become: yes
 
